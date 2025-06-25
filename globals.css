@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-heading: var(--font-quicksand);
+  --font-body: var(--font-inter);
+}
+
+/* Apply base font styling */
+body {
+  @apply font-sans text-base leading-relaxed;
+  font-family: var(--font-body), sans-serif;
+  background-color: var(--tw-bg-hero); /* fallback if needed */
+}
+
+/* Headings use the more playful display font */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading), sans-serif;
+}
+
+/* Optional: basic dark mode transition support */
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
