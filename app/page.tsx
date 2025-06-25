@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <main className="bg-background text-text dark:bg-darkbg dark:text-lighttext">
+    <main className="text-text dark:text-lighttext">
       {/* Hero Section */}
-      <section className="min-h-[80vh] flex flex-col justify-center items-center text-center px-6 py-20">
+      <section className="min-h-[80vh] flex flex-col justify-center items-center text-center px-6 py-20 bg-background dark:bg-darkbg">
         <h1 className="text-5xl md:text-6xl font-serif mb-4">
           Camp Tamarack Valley
         </h1>
@@ -18,7 +18,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-6 text-center bg-white dark:bg-[#2a2a2a]">
+      <section className="py-20 px-6 text-center bg-green-50 dark:bg-green-900">
         <h2 className="text-3xl font-serif mb-4">Unplug. Explore. Grow.</h2>
         <p className="max-w-2xl mx-auto text-lg">
           Camp Tamarack Valley offers kids ages 7–14 a screen-free summer of outdoor adventure, creativity, and connection. From canoeing to campfire stories, every moment is designed to build confidence and lifelong friendships.
@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
       {/* Programs Preview */}
-      <section className="py-20 px-6 text-center">
+      <section className="py-20 px-6 text-center bg-yellow-50 dark:bg-yellow-900">
         <h2 className="text-3xl font-serif mb-4">Sample Programs</h2>
         <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
           <div className="bg-white dark:bg-[#1e1e1e] p-6 rounded-xl shadow-md w-full md:w-1/3">
@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* Staff Preview */}
-      <section className="py-20 px-6 text-center bg-white dark:bg-[#2a2a2a]">
+      <section className="py-20 px-6 text-center bg-green-100 dark:bg-green-800">
         <h2 className="text-3xl font-serif mb-4">Meet Our Staff</h2>
         <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
           <div className="flex flex-col items-center">
@@ -79,7 +79,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Preview */}
-      <section className="py-20 px-6 text-center">
+      <section className="py-20 px-6 text-center bg-white dark:bg-[#2c2c2c]">
         <h2 className="text-3xl font-serif mb-4">Questions?</h2>
         <p className="max-w-xl mx-auto mb-6">
           What should my child bring? How does registration work? Find answers to common parent questions.
