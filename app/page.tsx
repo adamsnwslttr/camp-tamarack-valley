@@ -1,110 +1,88 @@
 export default function Home() {
   return (
-    <main className="text-text dark:text-lighttext">
+    <div>
       {/* Hero Section */}
-      <section className="min-h-[80vh] flex flex-col justify-center items-center text-center px-6 py-20 bg-background dark:bg-darkbg">
-        <h1 className="text-5xl md:text-6xl font-serif mb-4">
-          Camp Tamarack Valley
-        </h1>
-        <p className="text-xl md:text-2xl max-w-2xl mb-8">
+      <section className="bg-[#fefcf8] text-[#1e1e1e] px-6 py-20 text-center">
+        <h1 className="text-4xl md:text-5xl font-serif mb-4">Camp Tamarack Valley</h1>
+        <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
           Where screen time stops, and adventure begins.
         </p>
         <a
-          href="#"
-          className="bg-accent text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:opacity-90 transition"
+          href="#register"
+          className="inline-block bg-[#4e6637] text-white py-3 px-6 rounded-xl font-semibold hover:bg-[#3b4e2c] transition"
         >
-          Join the Waitlist
+          Join the Adventure
         </a>
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-6 text-center bg-green-50 dark:bg-green-900">
-        <h2 className="text-3xl font-serif mb-4">Unplug. Explore. Grow.</h2>
-        <p className="max-w-2xl mx-auto text-lg">
-          Camp Tamarack Valley offers kids ages 7–14 a screen-free summer of outdoor adventure, creativity, and connection. From canoeing to campfire stories, every moment is designed to build confidence and lifelong friendships.
+      <section className="bg-[#2f3e2e] text-white px-6 py-16 text-center">
+        <h2 className="text-3xl font-serif mb-4">Unplug. Explore. Connect.</h2>
+        <p className="text-md max-w-2xl mx-auto">
+          Nestled in the heart of the wilderness, Camp Tamarack Valley is a screen-free summer experience where kids build real-world confidence, friendships, and unforgettable memories.
         </p>
       </section>
 
-      {/* Programs Preview */}
-      <section className="py-20 px-6 text-center bg-yellow-50 dark:bg-yellow-900">
-        <h2 className="text-3xl font-serif mb-4">Sample Programs</h2>
-        <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
-          <div className="bg-white dark:bg-[#1e1e1e] p-6 rounded-xl shadow-md w-full md:w-1/3">
-            <h3 className="text-xl font-bold mb-2">Outdoor Skills</h3>
-            <p>Learn fire-building, shelter-making, and compass navigation.</p>
+      {/* Programs Section */}
+      <section className="bg-[#dce2d0] text-[#1e1e1e] px-6 py-16 text-center">
+        <h2 className="text-3xl font-serif mb-6">Camp Schedule</h2>
+        <div className="max-w-3xl mx-auto">
+          <iframe
+            src="https://www.notion.so/embed/your-schedule-id"
+            className="w-full h-[600px] border rounded-xl"
+            title="Program Schedule"
+          ></iframe>
+        </div>
+      </section>
+
+      {/* Staff Section */}
+      <section className="bg-[#795c3a] text-white px-6 py-16 text-center">
+        <h2 className="text-3xl font-serif mb-6">Meet the Team</h2>
+        <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+          {/* Sample staff card */}
+          <div className="bg-white/10 p-4 rounded-lg shadow-md">
+            <img src="https://via.placeholder.com/150" alt="Staff 1" className="rounded-full mx-auto mb-2" />
+            <h3 className="font-bold">Alex Maple</h3>
+            <p>Camp Director</p>
           </div>
-          <div className="bg-white dark:bg-[#1e1e1e] p-6 rounded-xl shadow-md w-full md:w-1/3">
-            <h3 className="text-xl font-bold mb-2">Creative Arts</h3>
-            <p>Daily painting, music, drama, and storytelling sessions.</p>
+          <div className="bg-white/10 p-4 rounded-lg shadow-md">
+            <img src="https://via.placeholder.com/150" alt="Staff 2" className="rounded-full mx-auto mb-2" />
+            <h3 className="font-bold">Jordan Pine</h3>
+            <p>Head Counselor</p>
           </div>
-          <div className="bg-white dark:bg-[#1e1e1e] p-6 rounded-xl shadow-md w-full md:w-1/3">
-            <h3 className="text-xl font-bold mb-2">Team Challenges</h3>
-            <p>Group games that build teamwork, resilience, and laughter.</p>
+          <div className="bg-white/10 p-4 rounded-lg shadow-md">
+            <img src="https://via.placeholder.com/150" alt="Staff 3" className="rounded-full mx-auto mb-2" />
+            <h3 className="font-bold">Taylor Birch</h3>
+            <p>Program Coordinator</p>
           </div>
         </div>
-        <a
-          href="/programs"
-          className="mt-6 inline-block text-accent font-semibold hover:underline"
-        >
-          View Full Schedule →
-        </a>
       </section>
 
-      {/* Staff Preview */}
-      <section className="py-20 px-6 text-center bg-green-100 dark:bg-green-800">
-        <h2 className="text-3xl font-serif mb-4">Meet Our Staff</h2>
-        <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
-          <div className="flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-400 rounded-full mb-2" />
-            <h3 className="font-semibold">Jordan</h3>
-            <p className="text-sm text-muted">Camp Director</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-400 rounded-full mb-2" />
-            <h3 className="font-semibold">Sam</h3>
-            <p className="text-sm text-muted">Outdoor Leader</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="w-24 h-24 bg-gray-400 rounded-full mb-2" />
-            <h3 className="font-semibold">Riley</h3>
-            <p className="text-sm text-muted">Arts & Crafts</p>
-          </div>
+      {/* FAQ Section */}
+      <section className="bg-[#f4f1eb] text-[#1e1e1e] px-6 py-16 text-center">
+        <h2 className="text-3xl font-serif mb-6">FAQs</h2>
+        <div className="max-w-3xl mx-auto text-left space-y-4">
+          <details className="bg-white rounded p-4 shadow">
+            <summary className="cursor-pointer font-semibold">What ages can attend Camp Tamarack Valley?</summary>
+            <p className="mt-2">Our programs are designed for children aged 8–14.</p>
+          </details>
+          <details className="bg-white rounded p-4 shadow">
+            <summary className="cursor-pointer font-semibold">What’s your refund policy?</summary>
+            <p className="mt-2">Full refunds are available up to 30 days before camp starts.</p>
+          </details>
         </div>
-        <a
-          href="/staff"
-          className="mt-6 inline-block text-accent font-semibold hover:underline"
-        >
-          See All Staff →
-        </a>
       </section>
 
-      {/* FAQ Preview */}
-      <section className="py-20 px-6 text-center bg-white dark:bg-[#2c2c2c]">
-        <h2 className="text-3xl font-serif mb-4">Questions?</h2>
-        <p className="max-w-xl mx-auto mb-6">
-          What should my child bring? How does registration work? Find answers to common parent questions.
-        </p>
+      {/* CTA Footer */}
+      <section className="bg-[#4e6637] text-white px-6 py-16 text-center">
+        <h2 className="text-3xl font-serif mb-4">Ready for the best summer ever?</h2>
         <a
-          href="/faq"
-          className="text-accent font-semibold hover:underline"
+          href="#register"
+          className="inline-block bg-white text-[#4e6637] font-semibold py-3 px-6 rounded-xl hover:bg-gray-100 transition"
         >
-          Read the FAQs →
+          Register Now
         </a>
       </section>
-
-      {/* Final CTA */}
-      <section className="py-16 px-6 bg-accent text-white text-center">
-        <h2 className="text-3xl font-serif mb-4">Secure Your Spot</h2>
-        <p className="mb-6 max-w-xl mx-auto">
-          Spaces are limited. Join the waitlist and be the first to know when registration opens.
-        </p>
-        <a
-          href="#"
-          className="bg-white text-accent font-semibold px-6 py-3 rounded-xl shadow hover:opacity-90 transition"
-        >
-          Join the Waitlist
-        </a>
-      </section>
-    </main>
+    </div>
   );
 }
