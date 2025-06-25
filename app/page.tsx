@@ -14,7 +14,7 @@ export default function Home() {
           <a href="#contact" className="hover:underline">Contact</a>
           <a
             href="#signup"
-            className="ml-4 bg-goldenrod hover:bg-goldenrodDark text-darkForest font-semibold py-2 px-4 rounded transition"
+            className="ml-4 bg-goldenrod hover:bg-goldenrodDark text-darkForest font-semibold py-2 px-4 rounded shadow-md transition duration-200"
           >
             Join the Adventure
           </a>
