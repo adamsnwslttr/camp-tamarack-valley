@@ -65,23 +65,6 @@ export default function Home() {
           Our campers explore, learn, and play in a safe, supportive environment led by experienced, caring staff.
         </p>
       </section>
-
-      {/* Mountain Divider */}
-      <div className="w-full overflow-hidden leading-[0] -mt-1">
-        <svg
-          viewBox="0 0 1440 320"
-          className="block w-full h-[150px]"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="#3D5B3B"
-            d="M0,160 L240,80 L480,200 L720,100 L960,200 L1200,80 L1440,160 L1440,320 L0,320 Z"
-          />
-        </svg>
-      </div>
-
-
      
       {/* Programs Section */}
       <section id="programs" className="bg-pine py-16 px-6 text-hero text-center">
@@ -103,17 +86,17 @@ export default function Home() {
         <h3 className="text-3xl font-heading font-bold mb-6">Meet Our Staff</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="bg-hero rounded-lg shadow p-6 text-forest">
-            <Image src="/staff1.jpg" alt="Camp Director" width={300} height={300} className="rounded-full mx-auto mb-4" />
+            <Image src="/images/alex.jpg" alt="Camp Director" width={300} height={300} className="rounded-full mx-auto mb-4" />
             <h4 className="font-bold font-heading text-xl">Alex, Camp Director</h4>
             <p className="font-body">15 years of outdoor education experience and boundless camp spirit.</p>
           </div>
           <div className="bg-hero rounded-lg shadow p-6 text-forest">
-            <Image src="/staff2.jpg" alt="Counselor" width={300} height={300} className="rounded-full mx-auto mb-4" />
+            <Image src="/images/jordan.jpg" alt="Counselor" width={300} height={300} className="rounded-full mx-auto mb-4" />
             <h4 className="font-bold font-heading text-xl">Jordan, Senior Counselor</h4>
             <p className="font-body">Beloved by campers for storytelling and late-night singalongs.</p>
           </div>
           <div className="bg-hero rounded-lg shadow p-6 text-forest">
-            <Image src="/staff3.jpg" alt="Activity Leader" width={300} height={300} className="rounded-full mx-auto mb-4" />
+            <Image src="/images/morgan.jpg" alt="Activity Leader" width={300} height={300} className="rounded-full mx-auto mb-4" />
             <h4 className="font-bold font-heading text-xl">Morgan, Activity Lead</h4>
             <p className="font-body">Brings creative magic to arts & crafts, rain or shine.</p>
           </div>
