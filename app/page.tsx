@@ -66,20 +66,21 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Dramatic Mountain Divider */}
-      <div className="-mt-24 relative z-10">
+      {/* Mountain Divider */}
+      <div className="w-full overflow-hidden leading-[0] -mt-1">
         <svg
           viewBox="0 0 1440 320"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-40 md:h-64"
+          className="block w-full h-[150px]"
           preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill="#3D5B3B" // pine color
-            d="M0,192L60,170.7C120,149,240,107,360,90.7C480,75,600,85,720,112C840,139,960,181,1080,186.7C1200,192,1320,160,1380,144L1440,128V0H0Z"
+            fill="#3D5B3B"
+            d="M0,160 L240,80 L480,200 L720,100 L960,200 L1200,80 L1440,160 L1440,320 L0,320 Z"
           />
         </svg>
       </div>
+
 
      
       {/* Programs Section */}
