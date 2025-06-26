@@ -17,10 +17,15 @@ export default function Navbar() {
           aria-label="Toggle Menu"
         >
           <svg
-            className="w-6 h-6 fill-current text-white"
+            className="w-6 h-6"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M4 5h16M4 12h16M4 19h16" />
+            <path d="M4 5h16M4 12h16M4 19h16" 
+            stroke="white"
+            strokeWidth="2"
+            strokeLinecap="round"
+            />
           </svg>
         </button>
 
