@@ -17,7 +17,7 @@ export default function Navbar() {
           aria-label="Toggle Menu"
         >
           <svg
-            className="w-6 h-6 fill-current text-hero"
+            className="w-6 h-6 fill-current text-white"
             viewBox="0 0 24 24"
           >
             <path d="M4 5h16M4 12h16M4 19h16" />
