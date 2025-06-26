@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Inter, Quicksand } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import Navbar from './components/navbar';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
 const quicksand = Quicksand({ subsets: ["latin"], variable: "--font-heading" });
@@ -11,25 +12,8 @@ const quicksand = Quicksand({ subsets: ["latin"], variable: "--font-heading" });
 export default function Home() {
   return (
     <main className={`${inter.variable} ${quicksand.variable} font-body bg-hero text-forest`}>
-      {/* Navbar */}
-      <nav className="flex justify-between items-center p-6 bg-forest text-hero">
-        <h1 className="text-2xl font-bold font-heading">Camp Tamarack Valley</h1>
-        <div className="flex items-center space-x-6 text-sm font-body">
-          <a href="#" className="hover:underline">Home</a>
-          <a href="#about" className="hover:underline">About</a>
-          <a href="#programs" className="hover:underline">Programs</a>
-          <a href="#staff" className="hover:underline">Staff</a>
-          <a href="#faq" className="hover:underline">FAQ</a>
-          <a href="#photos" className="hover:underline">Photos</a>
-          <a href="#contact" className="hover:underline">Contact</a>
-          <a
-            href="#signup"
-            className="ml-4 bg-ember hover:bg-bark text-hero font-semibold py-2 px-4 rounded shadow-md transition duration-200"
-          >
-            Join the Adventure
-          </a>
-        </div>
-      </nav>
+
+      <navbar />
 
       {/* Hero Section */}
       <section
