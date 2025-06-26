@@ -32,16 +32,30 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-hero p-16 text-center text-forest">
-        <h2 className="text-4xl font-heading font-bold mb-4">Where screen time stops, and adventure begins.</h2>
-        <p className="text-lg font-body mb-6">Camp Tamarack Valley is a place for discovery, friendship, and the kind of memories you keep forever.</p>
-        <a
-          href="#signup"
-          className="inline-block bg-ember hover:bg-bark text-hero font-bold py-3 px-6 rounded shadow-md transition duration-200"
-        >
-          Join the Adventure
-        </a>
+      <section
+        className="relative bg-hero text-center text-forest h-[600px] flex flex-col justify-center items-center px-6"
+        style={{
+          backgroundImage: 'url("/images/your-hero-filename.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="bg-hero/80 backdrop-blur-sm p-6 rounded shadow-md">
+          <h2 className="text-4xl font-heading font-bold mb-4">
+            Where screen time stops, and adventure begins.
+          </h2>
+          <p className="text-lg font-body mb-6">
+            Camp Tamarack Valley is a place for discovery, friendship, and the kind of memories you keep forever.
+          </p>
+          <a
+            href="#signup"
+            className="inline-block bg-ember hover:bg-bark text-hero font-bold py-3 px-6 rounded shadow-md transition duration-200"
+          >
+            Join the Adventure
+          </a>
+        </div>
       </section>
+
 
       {/* About Section */}
       <section id="about" className="bg-trail py-16 px-6 text-center text-bark">
