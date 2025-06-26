@@ -66,20 +66,21 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Mountain Divider */}
-      <div className="w-full overflow-hidden leading-[0] bg-pine -mt-1">
+      {/* Dramatic Mountain Divider */}
+      <div className="-mt-24 relative z-10">
         <svg
-          className="relative block w-full h-[100px]"
-          xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-40 md:h-64"
           preserveAspectRatio="none"
         >
           <path
             fill="#3D5B3B" // pine color
-            d="M0,288L80,272C160,256,320,224,480,202.7C640,181,800,171,960,165.3C1120,160,1280,160,1360,160L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
-          ></path>
+            d="M0,192L60,170.7C120,149,240,107,360,90.7C480,75,600,85,720,112C840,139,960,181,1080,186.7C1200,192,1320,160,1380,144L1440,128V0H0Z"
+          />
         </svg>
       </div>
+
      
       {/* Programs Section */}
       <section id="programs" className="bg-pine py-16 px-6 text-hero text-center">
