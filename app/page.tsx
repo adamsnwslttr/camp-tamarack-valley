@@ -35,7 +35,7 @@ export default function Home() {
       <section
         className="relative bg-hero text-center text-forest h-[600px] flex flex-col justify-center items-center px-6"
         style={{
-          backgroundImage: 'url("/images/your-hero-filename.jpg")',
+          backgroundImage: 'url("/images/hero.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
