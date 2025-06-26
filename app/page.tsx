@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Inter, Quicksand } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const quicksand = Quicksand({ subsets: ["latin"], variable: "--font-quicksand" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
+const quicksand = Quicksand({ subsets: ["latin"], variable: "--font-heading" });
 
 export default function Home() {
   return (
