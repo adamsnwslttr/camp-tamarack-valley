@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className={`${inter.variable} ${quicksand.variable} font-body bg-hero text-forest`}>
 
-      <navbar />
+      <Navbar />
 
       {/* Hero Section */}
       <section
