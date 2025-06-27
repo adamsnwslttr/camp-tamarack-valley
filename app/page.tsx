@@ -103,6 +103,10 @@ export default function Home() {
               Visit us at <span className="font-semibold">1000 Fern Gully Ln, Algonquin Highlands, ON K0M 1J1, Canada</span>.<br /><br /> 
               We’re just a short drive north of Toronto, nestled among the lakes and forests of Ontario’s beautiful cottage country.
             </p>
+            <div className="font-body text-lg mt-4">
+              <p>Email us: <a href="mailto:info@camptamarackvalley.ca" className="underline hover:text-forest-dark">info@camptamarackvalley.ca</a></p>
+              <p className="mt-2">Call us: <a href="tel:+14165550123" className="underline hover:text-forest-dark">(416) 555-0123</a></p>
+            </div>
           </div>
       
           {/* Map */}
