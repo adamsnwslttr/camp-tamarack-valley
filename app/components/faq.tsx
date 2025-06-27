@@ -4,29 +4,30 @@ import { useState } from 'react';
 const faqs = [
   {
     question: "What ages do you accept?",
-    answer: "Camp is open to children aged 7–14.",
+    answer: "Camp Tamarack Valley welcomes children between the ages of 7 and 14. Our programs are specifically designed to engage and challenge kids in this age range, ensuring they have the most fun and rewarding experience possible while making new friends and learning new skills.",
   },
   {
     question: "How long have you been operating?",
-    answer: "We hosted our first campers in 1978 and have been opeerating every summer since!",
+    answer: "We hosted our first campers in 1978 and have proudly operated every summer since! With over four decades of experience, Camp Tamarack Valley has a rich history of creating unforgettable memories and fostering a love for the outdoors in generations of campers.",
   },
   {
     question: "How far is Camp Tamarack Valley from Toronto?",
-    answer: "Our camp is approximately a 2-hour drive north of Toronto, making it an easy and scenic weekend trip for families.",
+    answer: "Our camp is approximately a 2-hour drive north of Toronto, making it an easy and scenic weekend trip for families. Whether you’re coming for drop-off or a visiting day, the journey offers beautiful views of Ontario’s forests and lakes.",
   },
   {
     question: "What is the camper-to-counselor ratio?",
-    answer: "We maintain a 5:1 camper-to-counselor ratio to ensure every child gets the attention they deserve.",
+    answer: "We maintain a low camper-to-counselor ratio of 5:1 to ensure every child receives personalized attention and support. This ratio allows our experienced staff to truly get to know each camper, keeping them safe, engaged, and feeling included throughout their stay.",
   },
   {
     question: "What activities do you offer?",
-    answer: "Our program includes canoeing, archery, arts & crafts, hiking, campfire storytelling, and more!",
+    answer: "Our programs are packed with exciting options like canoeing on pristine lakes, archery, arts & crafts in our creative lodge, nature hikes through the forest, stargazing around the campfire, and classic camp games. There’s always something new to try and adventures waiting every day.",
   },
   {
     question: "Do you accommodate dietary restrictions?",
-    answer: "Yes! Our kitchen staff can handle most common dietary needs, including vegetarian, gluten-free, and nut-free options.",
+    answer: "Yes! Our professional kitchen staff is well-equipped to handle most common dietary restrictions, including vegetarian, gluten-free, and nut-free options. We take food allergies seriously and work closely with parents to ensure every camper enjoys safe, nutritious, and delicious meals during their stay.",
   },
 ];
+
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
