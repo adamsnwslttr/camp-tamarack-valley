@@ -42,37 +42,35 @@ export default function Testimonials() {
     setStartIndex((prev) => (prev + 1) % testimonials.length);
   };
 
-  const getVisibleTestimonials = () => {
-    const visible = [];
-    for (let i = 0; i < 3; i++) {
-      const index = (startIndex + i) % testimonials.length;
-      visible.push(testimonials[index]);
-    }
-    return visible;
-  };
-
   return (
     <section id="testimonials" className="bg-sky py-16 px-6 text-center text-forest relative">
       <h3 className="text-3xl font-heading font-bold mb-8">What Parents Are Saying</h3>
 
-      <div className="max-w-5xl mx-auto flex items-center relative">
+      <div className="max-w-5xl mx-auto flex items-center relative overflow-hidden">
         {/* Left Arrow */}
         <button
           onClick={handlePrev}
-          className="absolute left-0 z-10 bg-forest bg-opacity-70 hover:bg-opacity-90 text-hero rounded-full w-10 h-10 flex items-center justify-center shadow transition duration-200"
+          className="absolute left-[-20px] md:left-[-40px] z-10 bg-forest bg-opacity-70 hover:bg-opacity-90 text-hero rounded-full w-10 h-10 flex items-center justify-center shadow transition duration-200"
           aria-label="Previous testimonials"
         >
           ‹
         </button>
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 transition-transform duration-500">
-          {getVisibleTestimonials().map((testimonial, index) => (
+        <div className="flex transition-transform duration-700 ease-in-out"
+          style={{
+            transform: `translateX(-${startIndex * (100 / 3)}%)`,
+            width: `${(testimonials.length / 3) * 100}%`,
+          }}
+        >
+          {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-hero rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300"
+              className="w-full md:w-1/3 flex-shrink-0 px-2"
             >
-              <p className="font-body italic mb-4">“{testimonial.quote}”</p>
-              <p className="font-heading font-bold">{testimonial.name}</p>
+              <div className="bg-hero rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 h-full flex flex-col justify-between">
+                <p className="font-body italic mb-4">“{testimonial.quote}”</p>
+                <p className="font-heading font-bold">{testimonial.name}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -80,7 +78,7 @@ export default function Testimonials() {
         {/* Right Arrow */}
         <button
           onClick={handleNext}
-          className="absolute right-0 z-10 bg-forest bg-opacity-70 hover:bg-opacity-90 text-hero rounded-full w-10 h-10 flex items-center justify-center shadow transition duration-200"
+          className="absolute right-[-20px] md:right-[-40px] z-10 bg-forest bg-opacity-70 hover:bg-opacity-90 text-hero rounded-full w-10 h-10 flex items-center justify-center shadow transition duration-200"
           aria-label="Next testimonials"
         >
           ›
