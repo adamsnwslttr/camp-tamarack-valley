@@ -37,7 +37,7 @@ export default function Navbar() {
           <Link href="#staff" className="hover:underline">Staff</Link>
           <Link href="#faq" className="hover:underline">FAQ</Link>
           <Link href="#photos" className="hover:underline">Photos</Link>
-          <Link href="#contact" className="hover:underline">Contact</Link>
+          <Link href="#location" className="hover:underline">Contact</Link>
           <Link
             href="#signup"
             className="ml-4 bg-ember hover:bg-bark text-hero font-semibold py-2 px-4 rounded shadow-md transition duration-200"
@@ -56,7 +56,7 @@ export default function Navbar() {
           <Link href="#staff" className="hover:underline">Staff</Link>
           <Link href="#faq" className="hover:underline">FAQ</Link>
           <Link href="#photos" className="hover:underline">Photos</Link>
-          <Link href="#contact" className="hover:underline">Contact</Link>
+          <Link href="#location" className="hover:underline">Contact</Link>
           <Link
             href="#signup"
             className="bg-ember hover:bg-bark text-hero font-semibold py-2 px-4 rounded shadow-md transition duration-200"
