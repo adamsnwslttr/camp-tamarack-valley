@@ -25,16 +25,7 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="bg-trail py-16 px-6 text-bark">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
-          {/* Image */}
-          <div className="w-full md:w-1/2">
-            <img
-              src="/images/tamarack.jpg"
-              alt="Beautiful view of Tamarack Valley"
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
-          </div>
-      
+        <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
           {/* Text */}
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h3 className="text-3xl font-heading font-bold mb-4">About Tamarack Valley</h3>
@@ -43,8 +34,18 @@ export default function Home() {
               Our campers explore, learn, and play in a safe, supportive environment led by experienced, caring staff.
             </p>
           </div>
+      
+          {/* Image */}
+          <div className="w-full md:w-1/2">
+            <img
+              src="/images/tamarack.jpg"
+              alt="Beautiful view of Tamarack Valley"
+              className="rounded-lg shadow-lg w-full h-auto object-cover"
+            />
+          </div>
         </div>
       </section>
+
 
      
       {/* Programs Section */}
