@@ -24,13 +24,28 @@ export default function Home() {
 
 
       {/* About Section */}
-      <section id="about" className="bg-trail py-16 px-6 text-center text-bark">
-        <h3 className="text-3xl font-heading font-bold mb-4">About Tamarack Valley</h3>
-        <p className="max-w-3xl mx-auto font-body text-lg">
-          Nestled deep in the woods, Camp Tamarack Valley is a screen-free oasis where kids can reconnect with nature, build confidence, and make lifelong friends.
-          Our campers explore, learn, and play in a safe, supportive environment led by experienced, caring staff.
-        </p>
+      <section id="about" className="bg-trail py-16 px-6 text-bark">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+          {/* Image */}
+          <div className="w-full md:w-1/2">
+            <img
+              src="/images/tamarack.jpg"
+              alt="Beautiful view of Tamarack Valley"
+              className="rounded-lg shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+      
+          {/* Text */}
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h3 className="text-3xl font-heading font-bold mb-4">About Tamarack Valley</h3>
+            <p className="font-body text-lg max-w-xl mx-auto md:mx-0">
+              Nestled deep in the woods, Camp Tamarack Valley is a screen-free oasis where kids can reconnect with nature, build confidence, and make lifelong friends.
+              Our campers explore, learn, and play in a safe, supportive environment led by experienced, caring staff.
+            </p>
+          </div>
+        </div>
       </section>
+
      
       {/* Programs Section */}
       <section id="programs" className="bg-pine py-16 px-6 text-hero text-center">
