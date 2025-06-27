@@ -38,11 +38,12 @@ export default function Testimonials() {
         {currentTestimonials.map((t, index) => (
           <div
             key={index}
-            className="bg-hero rounded-lg shadow-md p-6 flex flex-col justify-between w-full md:w-1/3"
+            className="bg-hero rounded-lg shadow-md p-6 flex flex-col justify-between w-full md:w-1/3 min-h-[220px]"
           >
             <p className="font-body italic mb-4">“{t.quote}”</p>
             <p className="font-heading font-bold">{t.name}</p>
           </div>
+
         ))}
       </div>
 
