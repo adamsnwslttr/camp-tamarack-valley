@@ -50,13 +50,14 @@ export default function FAQ() {
               className="w-full text-left text-lg font-bold flex items-center gap-3 focus:outline-none"
               onClick={() => toggleFAQ(index)}
             >
-              <span className="">{openIndex === index ? '-' : '+'}</span>
+              <span>{openIndexes.includes(index) ? '-' : '+'}</span>
               <span className="flex-1">{faq.question}</span>
             </button>
 
-            {openIndex === index && (
+            {openIndexes.includes(index) && (
               <p className="mt-2 text-bark">{faq.answer}</p>
             )}
+
           </div>
         ))}
       </div>
