@@ -85,6 +85,29 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* Location Section */}
+      
+      <section id="location" className="bg-hero py-16 px-6 text-center text-bark">
+        <h3 className="text-3xl font-heading font-bold mb-6">Where to Find Us</h3>
+        <p className="font-body text-lg mb-6 max-w-2xl mx-auto">
+          Visit us at <span className="font-semibold">1000 Fern Gully Ln, Algonquin Highlands, ON K0M 1J1, Canada</span>.
+          We’re just a short drive north of Toronto, nestled among the beautiful lakes and forests of Ontario’s cottage country.
+        </p>
+        <div className="w-full max-w-4xl mx-auto rounded-lg shadow-lg overflow-hidden aspect-video">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9296.27985597794!2d-78.75380296280652!3d45.07650862168109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd5b6fb4fbe11e5%3A0x87b9f7013ce7c043!2sAlgonquin%20Highlands%2C%20ON%20K0M%201J1!5e0!3m2!1sen!2sca!4v1751043822200!5m2!1sen!2sca"
+            className="w-full h-full"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+
+      
       {/* FAQ Section */}
 
       <FAQ />
