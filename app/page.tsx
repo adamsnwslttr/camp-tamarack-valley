@@ -7,7 +7,7 @@ import "./globals.css";
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import FAQ from './components/faq';
-import Testimonials from './testimonials';
+import Testimonials from './components/testimonials';
 
 
 
