@@ -34,14 +34,18 @@ export default function Testimonials() {
     <section id="testimonials" className="bg-sky py-16 px-6 text-center text-forest">
       <h3 className="text-3xl font-heading font-bold mb-8">What Parents Are Saying</h3>
 
-      <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto mb-6 transition-transform duration-500 ease-in-out">
+      <div className="flex justify-center gap-6 max-w-6xl mx-auto mb-6 transition-transform duration-500 ease-in-out flex-wrap md:flex-nowrap">
         {currentTestimonials.map((t, index) => (
-          <div key={index} className="bg-hero rounded-lg shadow-md p-6 flex flex-col justify-between w-full md:w-1/3">
+          <div
+            key={index}
+            className="bg-hero rounded-lg shadow-md p-6 flex flex-col justify-between w-full md:w-1/3"
+          >
             <p className="font-body italic mb-4">“{t.quote}”</p>
             <p className="font-heading font-bold">{t.name}</p>
           </div>
         ))}
       </div>
+
 
       {/* Dots */}
       <div className="flex justify-center mt-4 space-x-2">
