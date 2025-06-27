@@ -1,6 +1,5 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import { useSwipeable } from 'react-swipeable';
 
 const testimonials = [
   { quote: "Camp Tamarack Valley gave my daughter the summer of her life. She came back more confident and full of stories about her adventures!", name: "Emma R." },
@@ -31,19 +30,13 @@ export default function Testimonials() {
   const startIndex = currentPage * 3;
   const currentTestimonials = testimonials.slice(startIndex, startIndex + 3);
 
-  const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => setCurrentPage((prev) => (prev + 1) % totalPages),
-    onSwipedRight: () => setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages),
-    trackMouse: true, // enables swiping on desktop
-  });
-
   return (
     <section id="testimonials" className="bg-sky py-16 px-6 text-center text-forest">
       <h3 className="text-3xl font-heading font-bold mb-8">What Parents Are Saying</h3>
 
-      <div {...swipeHandlers} className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto mb-6 cursor-grab active:cursor-grabbing">
+      <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto mb-6 transition-transform duration-500 ease-in-out">
         {currentTestimonials.map((t, index) => (
-          <div key={index} className="bg-hero rounded-lg shadow-md p-6 flex flex-col justify-between w-full md:w-1/3 transition-transform duration-500 ease-in-out">
+          <div key={index} className="bg-hero rounded-lg shadow-md p-6 flex flex-col justify-between w-full md:w-1/3">
             <p className="font-body italic mb-4">“{t.quote}”</p>
             <p className="font-heading font-bold">{t.name}</p>
           </div>
