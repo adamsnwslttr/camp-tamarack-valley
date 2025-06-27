@@ -94,7 +94,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h3 className="text-3xl font-heading font-bold mb-4">Where to Find Us</h3>
             <p className="font-body text-lg max-w-xl mx-auto md:mx-0">
-              Visit us at <span className="font-semibold">1000 Fern Gully Ln, Algonquin Highlands, ON K0M 1J1, Canada</span>.<br /> 
+              Visit us at <span className="font-semibold">1000 Fern Gully Ln, Algonquin Highlands, ON K0M 1J1, Canada</span>.<br /><br /> 
               We’re just a short drive north of Toronto, nestled among the lakes and forests of Ontario’s beautiful cottage country.
             </p>
           </div>
