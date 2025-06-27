@@ -30,10 +30,14 @@ const faqs = [
 
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndexes, setOpenIndexes] = useState<number[]>([]);  
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndexes((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index) // close if open
+        : [...prev, index]                // add if closed
+    );
   };
 
   return (
