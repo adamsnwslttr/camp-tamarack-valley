@@ -8,6 +8,7 @@ import Navbar from './components/navbar';
 import Hero from './components/hero';
 import FAQ from './components/faq';
 import Testimonials from './components/testimonials';
+import Footer from './components/footer';
 
 
 
@@ -147,6 +148,11 @@ export default function Home() {
           </button>
         </form>
       </section>
+
+      {/* Footer Section */}
+
+      <Footer />
+
     </main>
   );
 }
