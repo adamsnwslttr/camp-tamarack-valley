@@ -5,6 +5,8 @@ import { Inter, Quicksand } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import Navbar from './components/navbar';
+import FAQ from './components/faq';
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
 const quicksand = Quicksand({ subsets: ["latin"], variable: "--font-heading" });
@@ -88,17 +90,8 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="bg-hero py-16 px-6 text-center text-bark">
-        <h3 className="text-3xl font-heading font-bold mb-6">FAQs</h3>
-        <div className="max-w-4xl mx-auto text-left font-body">
-          <h4 className="font-bold">What ages do you accept?</h4>
-          <p className="mb-4">Camp is open to children aged 7–14.</p>
-          <h4 className="font-bold">Where is the camp located?</h4>
-          <p className="mb-4">We’re nestled in the Tamarack Valley region, just 90 minutes north of the city.</p>
-          <h4 className="font-bold">What’s your tech policy?</h4>
-          <p className="mb-4">We are 100% screen-free — campers leave devices at home to fully immerse in nature and friendships.</p>
-        </div>
-      </section>
+
+      <FAQ />
 
       {/* Contact/Signup Section */}
       <section id="signup" className="bg-ember text-hero py-16 px-6 text-center">
