@@ -42,12 +42,13 @@ export default function FAQ() {
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-bark pb-4">
             <button
-              className="w-full text-left text-lg font-bold flex justify-between items-center focus:outline-none"
+              className="w-full text-left text-lg font-bold flex items-center gap-3 focus:outline-none"
               onClick={() => toggleFAQ(index)}
             >
-              {faq.question}
-              <span className="ml-2">{openIndex === index ? '-' : '+'}</span>
+              <span className="">{openIndex === index ? '-' : '+'}</span>
+              <span className="flex-1">{faq.question}</span>
             </button>
+
             {openIndex === index && (
               <p className="mt-2 text-bark">{faq.answer}</p>
             )}
