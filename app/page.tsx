@@ -52,19 +52,36 @@ export default function Home() {
 
      
       {/* Programs Section */}
-      <section id="programs" className="bg-pine py-16 px-6 text-hero text-center">
-        <h3 className="text-3xl font-heading font-bold mb-6">Sample Programs</h3>
-        <p className="max-w-3xl mx-auto font-body text-lg mb-4">
-          From canoeing and archery to arts & crafts and stargazing — each day is packed with variety and excitement. View our full program schedule in Notion:
-        </p>
-        <div className="flex justify-center">
-          <iframe
-            src="https://www.notion.so/embed/sample-program-table"
-            className="w-full max-w-3xl h-96 border rounded"
-            allowFullScreen
-          ></iframe>
+      <section id="activities" className="bg-hero py-16 px-6 text-center text-forest">
+        <h3 className="text-3xl font-heading font-bold mb-8">Our Most Popular Activities</h3>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="flex flex-col items-center">
+            <div className="text-5xl mb-2">⛺️</div>
+            <h4 className="font-heading text-xl">Campfires</h4>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-5xl mb-2">🌊</div>
+            <h4 className="font-heading text-xl">Canoeing</h4>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-5xl mb-2">🎨</div>
+            <h4 className="font-heading text-xl">Arts & Crafts</h4>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-5xl mb-2">🎵</div>
+            <h4 className="font-heading text-xl">Singing</h4>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-5xl mb-2">🌌</div>
+            <h4 className="font-heading text-xl">Star Gazing</h4>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="text-5xl mb-2">🥾</div>
+            <h4 className="font-heading text-xl">Hiking</h4>
+          </div>
         </div>
       </section>
+
 
       {/* Staff Section */}
       <section id="staff" className="bg-moss py-16 px-6 text-center text-hero">
